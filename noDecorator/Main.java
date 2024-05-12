@@ -3,6 +3,7 @@ package noDecorator;
 public class Main {
     public static void main(String[] args) {
 
+        // SimpleCoffeeベース
         SimpleCoffee simpleCoffee  = new SimpleCoffee();
         showCoffe(simpleCoffee.getDescription(), simpleCoffee.getPrice());
 
@@ -14,7 +15,9 @@ public class Main {
 
         SimpleCoffeeWithSyrupAndMilk simpleCoffeeWithSyrupAndMilk = new SimpleCoffeeWithSyrupAndMilk(new SimpleCoffee());
         showCoffe(simpleCoffeeWithSyrupAndMilk.getDescription(), simpleCoffeeWithSyrupAndMilk.getPrice());
-
+        
+        
+        // AmericanCoffeeベース
         AmericanCoffee americanCoffee = new AmericanCoffee();
         showCoffe(americanCoffee.getDescription(), americanCoffee.getPrice());
 

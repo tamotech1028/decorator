@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
+        // SimpleCoffeeベース
         Coffee simpleCofee = new SimpleCofee();
         showCoffe(simpleCofee);
 
@@ -13,6 +14,8 @@ public class Main {
         Coffee simpleCoffeeWithSyrupAndMilk = new MilkDecorator(new SyrupDecorator(new SimpleCofee()));
         showCoffe(simpleCoffeeWithSyrupAndMilk);
 
+
+        // AmericanCofeeベース
         Coffee americanCofee = new AmericanCoffee();
         showCoffe(americanCofee);
 
